@@ -1,0 +1,31 @@
+.btn-trans {
+  color: $color-secondary;
+  border: 1px solid $color-primary;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-weight: lighter;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.btn-flat {
+  color: white;
+  display: inline-block;
+  width: 12rem;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: bolder;
+  background-color: darken($color: $text-color-nav, $amount: 20%);
+  text-decoration: none;
+
+  &:hover {
+    color: $color-secondary;
+    text-decoration: none;
+    background-color: lighten($color: $text-color-nav, $amount: 10%);
+  }
+}

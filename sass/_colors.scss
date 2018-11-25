@@ -1,0 +1,27 @@
+.blue {
+  background-color: blue;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.yellow-text {
+  color: $color-secondary;
+}
+
+.white-text {
+  color: white;
+}
+
+.grey-text {
+  color: gray;
+}
+
+.navy {
+  background-color: $color-primary;
+}
+
+.navy-text {
+  color: $color-primary;
+}

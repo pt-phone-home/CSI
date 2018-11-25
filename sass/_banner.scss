@@ -1,0 +1,43 @@
+.banner {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  height: 95vh;
+  margin-top: -7rem;
+
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  // align-items: end;
+  // justify-items: end;
+
+  &-content {
+    grid-row: 2 / 3;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-template-rows: repeat(3, 1fr);
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      justify-self: end;
+    }
+    p {
+      color: white;
+      font-size: 2rem;
+      justify-self: end;
+      margin-left: 5rem;
+    }
+    a {
+      height: 3rem;
+      justify-self: end;
+      margin-right: 5rem;
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+
+  &-lg {
+    border-radius: 50%;
+    width: 80px;
+  }
+
+  &-xlg {
+    border-radius: 50%;
+    width: 100px;
+  }
+
+  &-sm {
+    border-radius: 50%;
+    width: 30px;
+  }
+
+  &-xsm {
+    border-radius: 50%;
+    width: 20px;
+  }
+}

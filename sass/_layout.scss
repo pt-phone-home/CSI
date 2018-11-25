@@ -1,0 +1,151 @@
+$grid-padding-default: 2rem;
+
+.container {
+  display: grid;
+  grid-template-columns: 7rem repeat(10, 1fr) 7rem;
+}
+
+.rowfull {
+  grid-column: 1 / -1;
+}
+
+.rowinset {
+  grid-column: 2 / 12;
+  border: 1px solid #000;
+}
+
+.twocol {
+  border: 1px solid #000;
+  display: grid;
+  padding: $grid-padding-default;
+
+  &-even {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+
+    @media (max-width: 860px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &-left {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+
+    &-lg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    &-xlg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 4fr 1fr;
+    }
+  }
+
+  &-right {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: 1fr 2fr;
+
+    &-lg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    &-xlg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 4fr;
+    }
+  }
+}
+
+.threecol {
+  display: grid;
+  padding: $grid-padding-default;
+
+  &-even {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &-left {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    &-lg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+
+    &-xlg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 4fr 1fr 1fr;
+    }
+  }
+
+  &-center {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    &-lg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    &-xlg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  }
+
+  &-right {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    &-lg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 1fr 3fr;
+    }
+
+    &-xlg {
+      display: grid;
+      padding: $grid-padding-default;
+      grid-template-columns: 1fr 1fr 4fr;
+    }
+  }
+}
+
+.fourcol {
+  display: grid;
+  padding: $grid-padding-default;
+
+  &-even {
+    display: grid;
+    padding: $grid-padding-default;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.justify-center {
+  justify-items: center;
+}

@@ -1,0 +1,165 @@
+.card {
+  height: 27rem;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  box-shadow: $box-shadow-light;
+
+  display: grid;
+  grid-template-rows: 10rem 10rem 7rem;
+}
+
+.card-small {
+  height: 21rem;
+  background: white;
+  grid-template-rows: 7rem 7rem 7rem;
+}
+
+.transparent {
+  background: transparent;
+}
+
+.card-large {
+  height: 32rem;
+  grid-template-rows: 15rem 10rem 7rem;
+}
+.card-xlarge {
+  height: 40rem;
+  grid-template-rows: 18rem 13rem 9rem;
+}
+
+.card-xlnewsitem {
+  min-height: 60rem;
+  height: auto;
+  grid-template-rows: 5rem 20rem 35rem;
+}
+
+// Top Section Options
+
+.card-image {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+}
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.98);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-image img:hover {
+  transform: scale(1);
+  filter: hue-rotate(40deg);
+}
+
+.card-header {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-bottom: grey 1px solid;
+
+  &-image {
+    font-size: 2.1rem;
+    color: blue;
+    justify-self: center;
+    align-self: center;
+    // border: 1px blue solid;
+    // border-radius: 50%;
+    // background: transparent;
+    padding: 7px;
+  }
+}
+
+.card-image span {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+
+// Buttons
+
+.btn-floating {
+  position: absolute;
+  bottom: -13px;
+  right: -5px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fa-plus {
+  position: relative;
+  top: 12px;
+  left: 1px;
+  font-size: 1em;
+}
+
+// Content Section Options
+
+.card-content {
+  padding: 5px;
+  font-size: 1.5rem;
+  border-bottom: lightgrey 1px solid;
+
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-content-plain {
+  grid-template-columns: 1fr;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+// Bottom Section Options
+
+.card-action {
+  border-top: lightgrey 1px solid;
+  display: grid;
+}
+
+.card-action a {
+  margin-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  align-self: center;
+}
+
+.card-footer {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  a {
+    grid-column: 1 / -1;
+    justify-self: center;
+    background: $color-primary;
+    color: $color-secondary;
+    padding: 0.85rem 0.85rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      background: lighten($color: $color-primary, $amount: 10%);
+    }
+  }
+}
+
+.card-footer div {
+  font-size: 2rem;
+}

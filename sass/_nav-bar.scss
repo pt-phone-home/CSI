@@ -1,0 +1,92 @@
+body {
+  position: relative;
+}
+
+.main-nav-logo-left {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 7rem;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+
+  .logo {
+    grid-column: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    h3 {
+      color: $text-color-nav;
+      font-size: 1.7rem;
+      letter-spacing: 1.2;
+      font-weight: lighter;
+      grid-column: 2 / 3;
+    }
+
+    img {
+      position: absolute;
+      height: 9rem;
+      width: auto;
+      top: 1rem;
+      left: 1rem;
+    }
+  }
+
+  .nav {
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+    justify-items: end;
+    padding-right: 5rem;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      font-size: 1.7rem;
+      color: $text-color-nav;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: darken($color: $text-color-nav, $amount: 20%);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+.main-nav {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 7rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+
+  &-item {
+    list-style: none;
+
+    &-link {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: darkgray;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
