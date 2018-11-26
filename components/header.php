@@ -1,7 +1,7 @@
 <div class="main-nav-logo-left">
 	<div class="logo">
 		<h3>0044 123456777</h3>
-		<img src="img/white-logo.png" alt="">
+		<img src="img/white-logo.png" class="logo-img" id="logo-img" alt="">
 
 
 	</div>

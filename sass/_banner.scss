@@ -8,36 +8,32 @@
   background-size: cover;
   background-position: center;
 
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  // align-items: end;
-  // justify-items: end;
+  position: relative;
 
-  &-content {
-    grid-row: 2 / 3;
-    display: grid;
-    justify-content: end;
-    align-content: center;
-    grid-template-rows: repeat(3, 1fr);
-
-    h1 {
-      color: white;
-      font-size: 3.5rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      justify-self: end;
-    }
-    p {
-      color: white;
-      font-size: 2rem;
-      justify-self: end;
-      margin-left: 5rem;
-    }
-    a {
-      height: 3rem;
-      justify-self: end;
-      margin-right: 5rem;
-      font-size: 1.4rem;
-    }
+  h1 {
+    color: darken($color: $text-color-nav, $amount: 80%);
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30rem;
+    right: 1rem;
+    width: 70%;
+  }
+  p {
+    color: darken($color: $text-color-nav, $amount: 60%);
+    font-size: 2rem;
+    margin-left: 5rem;
+    position: absolute;
+    bottom: 20rem;
+    right: 5rem;
+    width: 50%;
+  }
+  .banner-button {
+    margin-right: 5rem;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
   }
 }

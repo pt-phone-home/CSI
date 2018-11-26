@@ -18,14 +18,15 @@
   display: inline-block;
   width: 12rem;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-weight: bolder;
   background-color: darken($color: $text-color-nav, $amount: 20%);
   text-decoration: none;
 
   &:hover {
-    color: $color-secondary;
+    color: white;
     text-decoration: none;
-    background-color: lighten($color: $text-color-nav, $amount: 10%);
+    background-color: darken($color: $text-color-nav, $amount: 30%);
+    cursor: pointer;
   }
 }

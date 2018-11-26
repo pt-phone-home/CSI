@@ -11,15 +11,13 @@
 		<?php include 'components/header.php'; ?>
 
 		<div class="banner">
-			<div></div>
-			<div class="banner-content">
-				<h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium quos dolore voluptatibus cupiditate! Illum repellat
-					libero voluptas molestias consectetur?
-				</p>
-				<a href="#!" class="btn-flat">Read More</a>
-			</div>
+			<h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium quos dolore voluptatibus cupiditate! Illum repellat
+				libero voluptas molestias consectetur?
+			</p>
+			<a href="#!" class="btn-flat banner-button">Read More</a>
+
 		</div>
 
 		<div class="rowfull">
@@ -60,17 +58,133 @@
 					<h4>Commercial Fit Out</h4>
 				</div>
 			</div>
-			<img src="img/banner.jpg" alt="">
+
+			<div class="images">
+				<img src="img/banner.jpg" alt="">
+				<img src="img/banner.jpg" alt="">
+				<img src="img/banner.jpg" alt="">
+			</div>
 		</div>
 
 		<div class="projects-banner">
 			<h1>Our Projects</h1>
 		</div>
+		<div class="projects-background">
 
+		</div>
+
+		<div class="projects">
+			<div class="pr1">
+
+				<h1>Google</h1>
+
+			</div>
+			<div class="pr2">
+				<h1>Google</h1>
+			</div>
+			<div class="pr3">
+				<h1>Google</h1>
+			</div>
+			<div class="pr4">
+				<h1>Google</h1>
+			</div>
+			<div class="pr5">
+				<h1>Google</h1>
+			</div>
+			<div class="pr6">
+				<h1>Google</h1>
+			</div>
+		</div>
+
+		<div class="clients-banner">
+			<h1>Our Clients</h1>
+		</div>
+
+		<div class="clients-background">
+
+		</div>
+
+		<div class="clients">
+			<div class="cl1">
+				<i class="fab fa-youtube">
+				</i>
+				<h1>YouTube</h1>
+			</div>
+			<div class="cl2">
+				<i class="fab fa-google">
+				</i>
+				<h1>Google</h1>
+
+			</div>
+			<div class="cl3">
+				<img src="img/virgin_media.svg" alt="">
+				<h1>Virgin Media</h1>
+
+			</div>
+			<div class="cl4">
+				<i class="fab fa-youtube">
+				</i>
+				<h1>YouTube</h1>
+			</div>
+			<div class="cl5">
+				<i class="fab fa-youtube">
+				</i>
+				<h1>YouTube</h1>
+			</div>
+			<div class="cl6">
+				<i class="fab fa-youtube">
+				</i>
+				<h1>YouTube</h1>
+			</div>
+
+		</div>
+
+		<div class="contact-banner">
+			<h1>Contact Us</h1>
+		</div>
+
+		<div class="contact-background">
+
+		</div>
+
+		<div class="contact">
+			<div class="address">
+				<p>CSI</p>
+				<p>Unit 1</p>
+				<p>333 Limewood Business Park</p>
+				<p>Dublin 15</p>
+			</div>
+			<div class="contact-form-container">
+				<form action="">
+					<div class="form-group-inline">
+						<input type="text" placeholder="Name*" required>
+					</div>
+					<div class="form-group-inline">
+						<input type="number" placeholder="Phone">
+					</div>
+					<p>
+						<div class="form-group-inline">
+							<input type="email" placeholder="Email*" required>
+						</div>
+						<div class="form-group-inline">
+							<input type="text" placeholder="Company">
+						</div>
+					</p>
+					<div class="form-group-inline">
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					</div>
+
+					<button class="btn-flat">Submit</button>
+
+				</form>
+			</div>
+		</div>
+
+		<?php include 'components/footer.php';?>
 
 
 	</div>
-
+	<script src="js/navbar.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,130 @@
+.contact-form-container {
+  //   box-shadow: $box-shadow-light;
+  .form-group-inline {
+    display: inline;
+    padding: 1rem;
+
+    .message-label {
+      text-align: left;
+    }
+
+    label {
+      font-weight: bolder;
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    input {
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: inline-block;
+      width: 30%;
+      height: 5rem;
+      border-radius: 9px;
+      background-color: $text-color-nav;
+      padding: 1rem;
+
+      &:active,
+      &:focus {
+        background-color: white;
+        outline: none;
+      }
+    }
+
+    textarea {
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: block;
+      width: 68%;
+      border-radius: 9px;
+      background-color: $text-color-nav;
+      outline: none;
+      border: none;
+
+      &:focus,
+      &:active {
+        background-color: white;
+        outline: none;
+      }
+    }
+  }
+
+  .submit {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    display: block;
+    width: 15%;
+    height: 3.5rem;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+
+  .form-group-block {
+    display: block;
+    padding: 1rem;
+
+    .message-label {
+      text-align: left;
+    }
+
+    label {
+      font-weight: bolder;
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    input {
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: inline-block;
+      width: 30%;
+      height: 5rem;
+      border-radius: 7px;
+      background-color: $text-color-nav;
+      padding: 1rem;
+
+      &:active,
+      &:focus {
+        background-color: white;
+        outline: none;
+      }
+    }
+
+    textarea {
+      margin: 1rem 1rem;
+      font-size: 1.5rem;
+      display: block;
+      width: 70%;
+    }
+  }
+
+  .submit {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    display: block;
+    width: 15%;
+    height: 3.5rem;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+}
+
+.login-form {
+  .form-group {
+    input {
+      width: 50%;
+    }
+  }
+
+  button {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    display: block;
+    width: 10%;
+    height: 3.5rem;
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+}

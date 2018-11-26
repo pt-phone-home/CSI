@@ -1,0 +1,48 @@
+.footer {
+  grid-column: 1 / -1;
+  padding: 4rem;
+  background-color: darken($color: $text-color-nav, $amount: 50%);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  justify-content: center;
+
+  color: whitesmoke;
+
+  .footer-main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    .address {
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .number {
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .social {
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .footer-sub {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+}

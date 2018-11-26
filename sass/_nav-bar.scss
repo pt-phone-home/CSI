@@ -2,6 +2,15 @@ body {
   position: relative;
 }
 
+.small-img {
+  position: absolute;
+  height: 5rem;
+  width: auto;
+  top: 1rem;
+  left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
 .main-nav-logo-left {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
@@ -11,6 +20,7 @@ body {
   position: sticky;
   top: 0;
   background-color: transparent;
+  z-index: 100;
 
   .logo {
     grid-column: 1 / 2;
@@ -27,12 +37,13 @@ body {
       grid-column: 2 / 3;
     }
 
-    img {
+    .logo-img {
       position: absolute;
-      height: 9rem;
+      height: 12rem;
       width: auto;
       top: 1rem;
       left: 1rem;
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -52,12 +63,12 @@ body {
 
     a {
       font-size: 1.7rem;
-      color: $text-color-nav;
+      color: white; //$text-color-nav;
       text-decoration: none;
       text-transform: uppercase;
 
       &:hover {
-        color: darken($color: $text-color-nav, $amount: 20%);
+        color: darken($color: $text-color-nav, $amount: 50%);
         transition: all 0.2s ease-in-out;
       }
     }
@@ -89,4 +100,9 @@ body {
       }
     }
   }
+}
+
+.small-nav {
+  background-color: darken($color: $text-color-nav, $amount: 30%);
+  transition: all 0.3s ease-in-out;
 }
