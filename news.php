@@ -1,3 +1,12 @@
+<?php 
+require 'components/init.php';
+$conn = require 'components/db.php';
+
+$articles = Article::getAll($conn);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,71 +36,37 @@
 
 		<div class="news-and-updates">
 			<div class="news">
+				<?php if ($articles): ?>
+				<?php foreach ($articles as $article):?>
+				<div class="news-item">
+					<img src="img/banner.jpg" alt="">
+					<div class="info">
+						<h1>
+							<?=$article['title'];?>
+						</h1>
+						<small>
+							<?=$article['published_at'];?>
+						</small>
+					</div>
+					<div class="news-item-content">
+						<p>
+							<?=$article['content'];?>
+						</p>
+					</div>
+				</div>
+				<?php endforeach;?>
+				<?php endif ;?>
 
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>Testing</h1>
-						<small>Date: </small>
-					</div>
-					<div class="news-item-content">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, dolorum, veritatis temporibus vero quisquam vitae
-							illum fugit neque natus omnis adipisci deleniti cum sunt! Ex blanditiis repellat doloremque iusto. Molestiae.</p>
-					</div>
-				</div>
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>Testing</h1>
-						<small>Date: </small>
-					</div>
-					<div class="news-item-content">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, dolorum, veritatis temporibus vero quisquam vitae
-							illum fugit neque natus omnis adipisci deleniti cum sunt! Ex blanditiis repellat doloremque iusto. Molestiae.</p>
-					</div>
-				</div>
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>Testing</h1>
-						<small>Date: </small>
-					</div>
-					<div class="news-item-content">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, dolorum, veritatis temporibus vero quisquam vitae
-							illum fugit neque natus omnis adipisci deleniti cum sunt! Ex blanditiis repellat doloremque iusto. Molestiae.</p>
-					</div>
-				</div>
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>Testing</h1>
-						<small>Date: </small>
-					</div>
-					<div class="news-item-content">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, dolorum, veritatis temporibus vero quisquam vitae
-							illum fugit neque natus omnis adipisci deleniti cum sunt! Ex blanditiis repellat doloremque iusto. Molestiae.</p>
-					</div>
-				</div>
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>Testing</h1>
-						<small>Date: </small>
-					</div>
-					<div class="news-item-content">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, dolorum, veritatis temporibus vero quisquam vitae
-							illum fugit neque natus omnis adipisci deleniti cum sunt! Ex blanditiis repellat doloremque iusto. Molestiae.</p>
-					</div>
-				</div>
+
 
 			</div>
+		</div>
 
-			<div class="twitter">
-				<a class="twitter-timeline" href="https://twitter.com/tweet_to_pete?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noborders noscrollbar"
-				 data-width="40rem" data-tweet-limit="10">Tweets by tweet_to_pete</a>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<div class="twitter">
+			<a class="twitter-timeline" href="https://twitter.com/tweet_to_pete?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noborders noscrollbar"
+			 data-width="40rem" data-tweet-limit="10">Tweets by tweet_to_pete</a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-			</div>
 		</div>
 
 

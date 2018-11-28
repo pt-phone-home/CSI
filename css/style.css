@@ -1119,20 +1119,23 @@ body {
   height: auto; }
 
 .news-and-updates {
-  grid-column: 2 / 12;
+  grid-column: 2 / 9;
   grid-row: 4 / 5;
-  height: 70rem;
+  height: auto;
   display: grid;
-  grid-template-columns: 3fr 1fr; }
+  grid-template-columns: 1fr; }
   .news-and-updates .news {
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem; }
+    grid-column-gap: 2rem;
+    justify-self: center; }
     .news-and-updates .news .news-item {
-      height: 30rem;
+      height: 40rem;
+      padding: 2rem;
       display: grid;
-      grid-template-rows: 3fr 1fr 3fr; }
+      grid-template-rows: 4fr 1fr 3fr;
+      border-top: 2px solid #f4eee2; }
       .news-and-updates .news .news-item img {
         object-fit: cover;
         object-position: center;
@@ -1140,6 +1143,7 @@ body {
         width: 100%; }
       .news-and-updates .news .news-item div h1 {
         font-size: 2rem;
+        margin-top: 1rem;
         color: #9c7c3b;
         text-align: center; }
       .news-and-updates .news .news-item div small {
@@ -1147,6 +1151,10 @@ body {
         font-size: 1.5rem; }
       .news-and-updates .news .news-item div p {
         padding: 2rem; }
-  .news-and-updates .twitter {
-    padding: 2rem;
-    overflow: scroll; }
+
+.twitter {
+  grid-row: 4 / 5;
+  grid-column: 9 / 12;
+  padding: 2rem;
+  overflow: scroll;
+  height: 60rem; }
