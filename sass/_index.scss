@@ -1,5 +1,6 @@
-.rowfull {
+.about-banner {
   display: grid;
+  grid-column: 1 / -1;
   grid-row: 3 / 4;
   justify-content: center;
   align-content: center;
@@ -18,14 +19,6 @@
     font-size: 5rem;
     text-transform: uppercase;
     color: darken($color: $text-color-nav, $amount: 50%);
-
-    &:before {
-      content: " - ";
-    }
-
-    &:after {
-      content: " - ";
-    }
   }
 }
 
@@ -145,8 +138,8 @@
 .projects-background {
   grid-column: 1 / -1;
   grid-row: 6 / 7;
-  background-color: lighten($color: lightgrey, $amount: 15%);
-  height: 80rem;
+  background-color: darken($color: $text-color-nav, $amount: 5%);
+  height: 88rem;
 }
 
 .projects {
@@ -154,6 +147,7 @@
   grid-row: 6 / 7;
   height: 80rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);

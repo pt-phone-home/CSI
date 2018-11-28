@@ -10,7 +10,7 @@
 	<div class="container">
 		<?php include 'components/header.php'; ?>
 
-		<div class="banner">
+		<div class="banner split" id="image">
 			<h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium quos dolore voluptatibus cupiditate! Illum repellat
@@ -20,8 +20,8 @@
 
 		</div>
 
-		<div class="rowfull">
-			<h1>About us</h1>
+		<div class="about-banner">
+			<h1 data-aos="fade-up" data-aos-offset="0" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">About us</h1>
 		</div>
 
 		<div class="about-us-background">
@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="about-us">
-			<div class="about">
+			<div class="about" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h2>Expertise</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae aut aliquid accusamus deleniti. Impedit eligendi
 					iure velit quas optio sequi. Ad quidem, fugiat veniam ea nesciunt aliquam aperiam itaque.</p>
@@ -39,7 +39,7 @@
 					debitis blanditiis nam voluptatum doloremque magnam odit at animi eos! Nobis, ipsa dignissimos. Vitae blanditiis fugiat
 					minus recusandae molestiae.</p>
 			</div>
-			<div class="special">
+			<div class="special" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h2>We specialise in</h2>
 				<div class="sp1">
 					<i class="fas fa-torii-gate"></i>
@@ -59,39 +59,39 @@
 				</div>
 			</div>
 
-			<div class="images">
-				<img src="img/banner.jpg" alt="">
-				<img src="img/banner.jpg" alt="">
+			<div class="images" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img src="img/banner.jpg" id="image" alt="">
+				<img src="img/banner.jpg" class="image" alt="">
 				<img src="img/banner.jpg" alt="">
 			</div>
 		</div>
 
 		<div class="projects-banner">
-			<h1>Our Projects</h1>
+			<h1 data-aos="fade-up" data-aos-offset="0" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">Our Projects</h1>
 		</div>
 		<div class="projects-background">
 
 		</div>
 
 		<div class="projects">
-			<div class="pr1">
+			<div class="pr1" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 
 				<h1>Google</h1>
 
 			</div>
-			<div class="pr2">
+			<div class="pr2" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h1>Google</h1>
 			</div>
-			<div class="pr3">
+			<div class="pr3" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h1>Google</h1>
 			</div>
-			<div class="pr4">
+			<div class="pr4" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h1>Google</h1>
 			</div>
-			<div class="pr5">
+			<div class="pr5" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h1>Google</h1>
 			</div>
-			<div class="pr6">
+			<div class="pr6" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<h1>Google</h1>
 			</div>
 		</div>
@@ -185,6 +185,12 @@
 
 	</div>
 	<script src="js/navbar.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/banner.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
 </body>
 
 </html>

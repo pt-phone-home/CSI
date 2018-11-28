@@ -17,11 +17,13 @@
   color: white;
   display: inline-block;
   width: 12rem;
-  border-radius: 3px;
+  border-radius: 15px;
   padding: 10px 20px;
   font-weight: bolder;
   background-color: darken($color: $text-color-nav, $amount: 20%);
   text-decoration: none;
+  box-shadow: $box-shadow-dark;
+  font-size: 1.6rem;
 
   &:hover {
     color: white;

@@ -19,6 +19,10 @@
     bottom: 30rem;
     right: 1rem;
     width: 70%;
+
+    .letter {
+      display: inline-block;
+    }
   }
   p {
     color: darken($color: $text-color-nav, $amount: 60%);
@@ -31,7 +35,7 @@
   }
   .banner-button {
     margin-right: 5rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     position: absolute;
     bottom: 10rem;
     right: 10rem;

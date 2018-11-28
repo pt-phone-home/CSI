@@ -1,0 +1,125 @@
+.news-page-banner {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background-image: linear-gradient(
+    to bottom right,
+    darken($color: $text-color-nav, $amount: 30%),
+    darken($color: $text-color-nav, $amount: 50%)
+  );
+  height: 70rem;
+  position: relative;
+  margin-top: -7rem;
+
+  i {
+    position: absolute;
+    left: 40rem;
+    top: 25rem;
+
+    font-size: 28rem;
+    color: white;
+  }
+
+  h1 {
+    position: absolute;
+    right: 5rem;
+    bottom: 30rem;
+
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+  }
+
+  p {
+    position: absolute;
+    right: 5rem;
+    bottom: 10rem;
+
+    font-size: 3rem;
+    color: white;
+
+    span {
+      color: $text-color-nav;
+    }
+  }
+}
+
+.news-banner {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background: url("../img/white-logo.png");
+  background-position: center;
+  background-size: fill;
+  background-repeat: none;
+  background-color: lighten($color: $text-color-nav, $amount: 5%);
+  height: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: darken($color: $text-color-nav, $amount: 50%);
+  }
+}
+
+.news-and-updates-background {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  background-color: lighten($color: lightgrey, $amount: 15%);
+  height: auto;
+}
+
+.news-and-updates {
+  grid-column: 2 / 12;
+  grid-row: 4 / 5;
+  height: 70rem;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  .news {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+    .news-item {
+      height: 30rem;
+      display: grid;
+      grid-template-rows: 3fr 1fr 3fr;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      div {
+        h1 {
+          font-size: 2rem;
+          color: darken($color: $text-color-nav, $amount: 50%);
+          text-align: center;
+        }
+        small {
+          display: block;
+          font-size: 1.5rem;
+        }
+
+        p {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+
+  .twitter {
+    padding: 2rem;
+    overflow: scroll;
+  }
+}
