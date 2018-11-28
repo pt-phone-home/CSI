@@ -1,10 +1,18 @@
-<?php 
-require 'components/init.php';
-$conn = require 'components/db.php';
+<?php
+	require 'components/init.php';
 
-$articles = Article::getAll($conn);
+	$db = new Database();
+	$conn = $db->getConn();
+
+	if (isset($_GET['id'])) {
+	
+		$article = Article::getByID($conn, $_GET['id']);
+
+} else {
+	$article = null;
+}
+
 ?>
-
 
 
 <!DOCTYPE html>
@@ -19,59 +27,28 @@ $articles = Article::getAll($conn);
 	<div class="container">
 
 		<?php include 'components/header.php'; ?>
+		<div class="newsitem-nav-background"></div>
+		<div class="newsitem-container-background"></div>
+		<div class="newsitem-container">
+			<div class="newsitem-topnav">
 
-		<div class="news-page-banner">
-			<i class="fas fa-newspaper"></i>
-			<h1>News:</h1>
-			<p>Latest news
-				<span>from</span> SCI</p>
-		</div>
+			</div>
+			<div class="newsitem-img">
 
-		<div class="news-banner">
-			<h1>Latest News &amp; Updates</h1>
-		</div>
+			</div>
+			<div class="newsitem-heading">
 
-		<div class="news-and-updates-background">
-		</div>
-
-		<div class="news-and-updates">
-			<div class="news">
-				<?php if ($articles): ?>
-				<?php foreach ($articles as $article):?>
-				<div class="news-item">
-					<img src="img/banner.jpg" alt="">
-					<div class="info">
-						<h1>
-							<?=$article['title'];?>
-						</h1>
-						<h5>
-							<?=$article['published_at'];?>
-						</h5>
-					</div>
-					<div class="news-item-content">
-						<p>
-							<?=$article['content'];?>
-						</p>
-					</div>
-					<div class="news-item-footer">
-						<a href="newsitem.php?id=<?=$article['id'];?>">Read More</a>
-					</div>
-
-				</div>
-				<?php endforeach;?>
-				<?php endif ;?>
-
-
+			</div>
+			<div class="newsitem-content">
 
 			</div>
 		</div>
 
-		<div class="twitter">
-			<a class="twitter-timeline" href="https://twitter.com/tweet_to_pete?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noborders noscrollbar"
-			 data-width="40rem" data-tweet-limit="10">Tweets by tweet_to_pete</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-		</div>
+
+
+
+
 
 
 

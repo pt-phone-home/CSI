@@ -32,3 +32,23 @@
     cursor: pointer;
   }
 }
+
+.btn-flat-news {
+  color: white;
+  display: inline-block;
+  width: 7rem;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-weight: bolder;
+  background-color: darken($color: $text-color-nav, $amount: 20%);
+  text-decoration: none;
+  box-shadow: $box-shadow-dark;
+  font-size: 1.6rem;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: darken($color: $text-color-nav, $amount: 30%);
+    cursor: pointer;
+  }
+}

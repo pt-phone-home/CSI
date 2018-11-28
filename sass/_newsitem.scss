@@ -1,0 +1,19 @@
+.newsitem-nav-background {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: darken($color: $text-color-nav, $amount: 50%);
+  height: 16rem;
+}
+
+.newsitem-container-background {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background-color: lighten($color: lightgrey, $amount: 15%);
+  height: 100rem;
+}
+
+.newsitem-container {
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  height: 100rem;
+}
