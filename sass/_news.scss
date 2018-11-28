@@ -95,6 +95,7 @@
       display: grid;
       grid-template-rows: 4fr 1fr 3fr 0.5fr;
       border: 2px solid $text-color-nav;
+      box-shadow: $box-shadow-light;
 
       img {
         object-fit: cover;
@@ -139,36 +140,6 @@
     }
     .news-item:nth-child(even) {
       height: 50rem;
-      padding: 3rem;
-      display: grid;
-      grid-template-rows: 4fr 1fr 3fr 0.5fr;
-      border: 2px solid $text-color-nav;
-
-      img {
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        width: 100%;
-      }
-
-      div {
-        h1 {
-          font-size: 2rem;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          color: darken($color: $text-color-nav, $amount: 50%);
-          text-align: center;
-        }
-        h5 {
-          display: block;
-          font-size: 1rem;
-          text-align: end;
-        }
-
-        p {
-          padding: 2rem;
-        }
-      }
     }
   }
 }

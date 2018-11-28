@@ -30,18 +30,26 @@
 		<div class="newsitem-nav-background"></div>
 		<div class="newsitem-container-background"></div>
 		<div class="newsitem-container">
+			<?php if ($article):?>
 			<div class="newsitem-topnav">
-
+				<i class="fas fa-arrow-left"></i>
+				<a href="news.php">Back to news</a>
 			</div>
 			<div class="newsitem-img">
-
+				<img src="img/banner.jpg" alt="">
 			</div>
 			<div class="newsitem-heading">
+				<h1>
+					<?=$article->title;?>
+				</h1>
 
 			</div>
 			<div class="newsitem-content">
-
+				<p>
+					<?=$article->content;?>
+				</p>
 			</div>
+			<?php endif ;?>
 		</div>
 
 

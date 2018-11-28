@@ -18,14 +18,14 @@
     margin-bottom: 4rem;
     font-size: 5rem;
     text-transform: uppercase;
-    color: darken($color: $text-color-nav, $amount: 50%);
+    color: $color-two;
   }
 }
 
 .about-us-background {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
-  background-color: lighten($color: lightgrey, $amount: 15%);
+  background-color: lighten($color: $color-two, $amount: 60%);
   height: 80rem;
 }
 
@@ -41,7 +41,7 @@
   .about {
     h2 {
       font-size: 3rem;
-      color: darken($color: $text-color-nav, $amount: 50%);
+      color: $color-two;
       margin-bottom: 2rem;
       text-align: center;
     }
@@ -81,7 +81,7 @@
         margin-bottom: 1.5rem;
         margin-left: 2.7rem;
         padding-bottom: 0.5rem;
-        border-bottom: solid 2px $text-color-nav;
+        border-bottom: solid 2px $color-two;
       }
     }
   }

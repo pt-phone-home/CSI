@@ -318,7 +318,7 @@ body {
   border-radius: 15px;
   padding: 10px 20px;
   font-weight: bolder;
-  background-color: #d8c398;
+  background-color: #9c3b7c;
   text-decoration: none;
   box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.18);
   font-size: 1.6rem; }
@@ -371,14 +371,17 @@ body {
   background-position: center;
   position: relative; }
   .banner h1 {
-    color: #2d2411;
+    color: white;
     font-size: 3.5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     position: absolute;
     bottom: 30rem;
-    right: 1rem;
-    width: 70%; }
+    right: 10rem;
+    width: 45%;
+    background: #9c7c3b;
+    padding: 2rem;
+    text-align: end; }
     .banner h1 .letter {
       display: inline-block; }
   .banner p {
@@ -386,9 +389,13 @@ body {
     font-size: 2rem;
     margin-left: 5rem;
     position: absolute;
-    bottom: 20rem;
+    bottom: 18rem;
     right: 5rem;
-    width: 50%; }
+    width: 50%;
+    background: #d8c398;
+    padding: 2rem;
+    text-align: end;
+    margin-top: 2rem; }
   .banner .banner-button {
     margin-right: 5rem;
     font-size: 1.5rem;
@@ -415,12 +422,12 @@ body {
     margin-bottom: 4rem;
     font-size: 5rem;
     text-transform: uppercase;
-    color: #9c7c3b; }
+    color: #9c3b7c; }
 
 .about-us-background {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
-  background-color: #f9f9f9;
+  background-color: white;
   height: 80rem; }
 
 .about-us {
@@ -433,7 +440,7 @@ body {
   margin-top: 4rem; }
   .about-us .about h2 {
     font-size: 3rem;
-    color: #9c7c3b;
+    color: #9c3b7c;
     margin-bottom: 2rem;
     text-align: center; }
   .about-us .about p {
@@ -466,7 +473,7 @@ body {
       margin-bottom: 1.5rem;
       margin-left: 2.7rem;
       padding-bottom: 0.5rem;
-      border-bottom: solid 2px #f4eee2; }
+      border-bottom: solid 2px #9c3b7c; }
   .about-us .images {
     height: inherit;
     display: grid;
@@ -920,7 +927,7 @@ body {
 .projects-page-banner {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  background-image: linear-gradient(to bottom right, #caad73, #9c7c3b);
+  background-image: linear-gradient(to bottom right, #bc4e98, #d898c3);
   height: 70rem;
   position: relative;
   margin-top: -7rem; }
@@ -1152,7 +1159,8 @@ body {
       padding: 3rem;
       display: grid;
       grid-template-rows: 4fr 1fr 3fr 0.5fr;
-      border: 2px solid #f4eee2; }
+      border: 2px solid #f4eee2;
+      box-shadow: 6px 6px 5px -2px rgba(0, 0, 0, 0.18); }
       .news-and-updates .news .news-item img {
         object-fit: cover;
         object-position: center;
@@ -1180,28 +1188,7 @@ body {
         .news-and-updates .news .news-item div a:hover {
           color: #52411f; }
     .news-and-updates .news .news-item:nth-child(even) {
-      height: 50rem;
-      padding: 3rem;
-      display: grid;
-      grid-template-rows: 4fr 1fr 3fr 0.5fr;
-      border: 2px solid #f4eee2; }
-      .news-and-updates .news .news-item:nth-child(even) img {
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        width: 100%; }
-      .news-and-updates .news .news-item:nth-child(even) div h1 {
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        color: #9c7c3b;
-        text-align: center; }
-      .news-and-updates .news .news-item:nth-child(even) div h5 {
-        display: block;
-        font-size: 1rem;
-        text-align: end; }
-      .news-and-updates .news .news-item:nth-child(even) div p {
-        padding: 2rem; }
+      height: 50rem; }
 
 .twitter {
   grid-row: 4 / 5;
@@ -1225,4 +1212,39 @@ body {
 .newsitem-container {
   grid-column: 2 / 12;
   grid-row: 2 / 3;
-  height: 100rem; }
+  height: 100rem;
+  display: grid;
+  grid-template-rows: 5rem 50rem 7rem 50rem; }
+  .newsitem-container .newsitem-topnav {
+    grid-row: 1 / 2;
+    align-self: center; }
+    .newsitem-container .newsitem-topnav a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #9c7c3b; }
+      .newsitem-container .newsitem-topnav a:visited {
+        text-decoration: none; }
+    .newsitem-container .newsitem-topnav i {
+      font-size: 1.5rem;
+      color: #9c7c3b; }
+  .newsitem-container .newsitem-img {
+    display: grid; }
+    .newsitem-container .newsitem-img img {
+      height: 100%;
+      width: auto;
+      align-self: center;
+      justify-self: center; }
+  .newsitem-container .newsitem-heading {
+    margin-top: 2rem;
+    padding-left: 4rem;
+    margin-bottom: 3rem; }
+    .newsitem-container .newsitem-heading h1 {
+      font-size: 2rem;
+      color: #9c7c3b;
+      border-bottom: 2px solid #caad73;
+      padding-bottom: 1rem; }
+  .newsitem-container .newsitem-content {
+    background-color: #ede3d0;
+    background: url(../img/white-logo.png); }
+    .newsitem-container .newsitem-content p {
+      padding: 2rem 4rem; }
