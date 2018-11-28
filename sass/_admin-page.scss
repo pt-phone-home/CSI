@@ -1,0 +1,71 @@
+.admin-banner {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: darken($color: $text-color-nav, $amount: 50%);
+
+  h1 {
+    font-size: 5rem;
+    color: white;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.admin-content-background {
+  background: $text-color-nav;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.admin-content {
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  height: 50rem;
+}
+
+.form-container {
+  min-height: 40rem;
+  background: $text-color-nav;
+
+  .form-group {
+    display: block;
+    padding: 2rem;
+
+    label {
+      font-size: 1.5rem;
+      margin-right: 2rem;
+    }
+
+    input {
+      height: 3rem;
+      width: 20%;
+      border-radius: 7px;
+      background-color: darken($color: $text-color-nav, $amount: 20%);
+
+      &:focus {
+        background-color: white;
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    background-color: darken($color: $text-color-nav, $amount: 50%);
+    color: white;
+
+    &:hover {
+      background-color: darken($color: $text-color-nav, $amount: 40%);
+      cursor: pointer;
+    }
+  }
+
+  a {
+    background: red;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+  }
+}

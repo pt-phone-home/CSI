@@ -1248,3 +1248,55 @@ body {
     background: url(../img/white-logo.png); }
     .newsitem-container .newsitem-content p {
       padding: 2rem 4rem; }
+
+.admin-banner {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #9c7c3b; }
+  .admin-banner h1 {
+    font-size: 5rem;
+    color: white;
+    align-self: center;
+    justify-self: center; }
+
+.admin-content-background {
+  background: #f4eee2;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3; }
+
+.admin-content {
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  height: 50rem; }
+
+.form-container {
+  min-height: 40rem;
+  background: #f4eee2; }
+  .form-container .form-group {
+    display: block;
+    padding: 2rem; }
+    .form-container .form-group label {
+      font-size: 1.5rem;
+      margin-right: 2rem; }
+    .form-container .form-group input {
+      height: 3rem;
+      width: 20%;
+      border-radius: 7px;
+      background-color: #d8c398; }
+      .form-container .form-group input:focus {
+        background-color: white;
+        outline: none; }
+  .form-container button {
+    background-color: #9c7c3b;
+    color: white; }
+    .form-container button:hover {
+      background-color: #bc974e;
+      cursor: pointer; }
+  .form-container a {
+    background: red;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white; }
