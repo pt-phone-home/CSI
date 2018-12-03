@@ -64,8 +64,19 @@
 
   a {
     background: red;
+    display: inline-block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
+  }
+}
+
+.admin-area-articles {
+  padding: 2rem;
+
+  h2 {
+    color: darken($color: $text-color-nav, $amount: 50%);
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }

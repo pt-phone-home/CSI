@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (User::authenticate($conn, $_POST['username'], $_POST['password'])) {
         Auth::login();
-        Url::redirect("/drumcondrafc/admin-page.php");
+	   header('Location:/csi/admin-page.php');
+		//Url::redirect("/CSI/admin-page.php");
     } else {
         $error = 'login incorrect';
     }

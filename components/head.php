@@ -9,6 +9,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
 
 <link rel="stylesheet" href="css/style.css">

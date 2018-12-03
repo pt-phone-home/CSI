@@ -1297,6 +1297,81 @@ body {
       cursor: pointer; }
   .form-container a {
     background: red;
+    display: inline-block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white; }
+
+.admin-area-articles {
+  padding: 2rem; }
+  .admin-area-articles h2 {
+    color: #9c7c3b;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
+.new_newsitem-container {
+  display: grid;
+  grid-template-columns: 7rem repeat(10, 1fr) 7rem;
+  grid-template-rows: auto; }
+
+.new-newsitem-banner {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #9c7c3b; }
+  .new-newsitem-banner h1 {
+    font-size: 5rem;
+    color: white;
+    align-self: center;
+    justify-self: center; }
+
+.form-container {
+  grid-column: 2 / 12;
+  border: 1px solid #000;
+  min-height: 55rem;
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.form-container li {
+  list-style: none;
+  margin-left: 2rem;
+  background-color: #2a3075;
+  display: block;
+  color: #e8e2f4;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 60%;
+  padding-top: 0.5rem;
+  padding-left: 1rem; }
+
+.article-form {
+  grid-column: 2 / 12;
+  padding: 2rem; }
+  .article-form .form-group {
+    display: block;
+    padding: 1.5rem; }
+    .article-form .form-group label {
+      margin-right: 2rem;
+      font-size: 1.7rem; }
+    .article-form .form-group .content-label {
+      display: block;
+      margin-bottom: 2rem; }
+    .article-form .form-group .image-input {
+      width: 50rem;
+      background-color: white; }
+    .article-form .form-group input {
+      height: 2.7rem;
+      border-radius: 7px;
+      background-color: #f4eee2;
+      padding: 1rem;
+      width: 70%; }
+      .article-form .form-group input:focus {
+        outline: none;
+        background-color: white; }
+    .article-form .form-group textarea {
+      display: block;
+      padding: 1.5rem;
+      margin-top: 5rem;
+      width: 70%; }

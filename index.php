@@ -79,7 +79,8 @@
 				<h1>Google</h1>
 
 			</div>
-			<div class="pr2" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+			<div class="pr2" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+			 data-aos-once="true">
 				<h1>Google</h1>
 			</div>
 			<div class="pr3" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -174,7 +175,7 @@
 						<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					</div>
 
-					<button class="btn-flat">Submit</button>
+					<button class="btn-flat" data-aos="flip-up" data-aos-duration="4000" data-aos-delay="50">Submit</button>
 
 				</form>
 			</div>

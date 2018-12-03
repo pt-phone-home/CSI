@@ -1,0 +1,43 @@
+.new_newsitem-container {
+  display: grid;
+  grid-template-columns: 7rem repeat(10, 1fr) 7rem;
+  grid-template-rows: auto;
+}
+
+.new-newsitem-banner {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: darken($color: $text-color-nav, $amount: 50%);
+
+  h1 {
+    font-size: 5rem;
+    color: white;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.form-container {
+  grid-column: 2 / 12;
+  border: 1px solid #000;
+  min-height: 55rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-container li {
+  list-style: none;
+  margin-left: 2rem;
+  background-color: $color-primary;
+  display: block;
+  color: $color-secondary;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 60%;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}

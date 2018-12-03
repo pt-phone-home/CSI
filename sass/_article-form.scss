@@ -1,36 +1,44 @@
 .article-form {
-  margin-top: 3rem;
-  justify-self: end;
+  grid-column: 2 / 12;
   padding: 2rem;
-  width: 100%;
 
   .form-group {
+    display: block;
+    padding: 1.5rem;
+
+    label {
+      margin-right: 2rem;
+      font-size: 1.7rem;
+    }
+
+    .content-label {
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .image-input {
+      width: 50rem;
+      background-color: white;
+    }
+
     input {
-      width: 80%;
+      height: 2.7rem;
+      border-radius: 7px;
+      background-color: $text-color-nav;
+      padding: 1rem;
+      width: 70%;
+
+      &:focus {
+        outline: none;
+        background-color: white;
+      }
     }
 
     textarea {
-      width: 80%;
+      display: block;
+      padding: 1.5rem;
+      margin-top: 5rem;
+      width: 70%;
     }
-    .wisiwyg {
-      width: 80%;
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-
-      input {
-        border-radius: 7%;
-      }
-    }
-  }
-
-  button {
-    margin: 1rem 1rem;
-    font-size: 1.5rem;
-    display: block;
-    width: 15%;
-    height: 3.5rem;
-    background-color: $color-primary;
-    color: $color-secondary;
-    cursor: pointer;
   }
 }

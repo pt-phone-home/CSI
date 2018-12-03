@@ -36,7 +36,11 @@
 				<a href="news.php">Back to news</a>
 			</div>
 			<div class="newsitem-img">
+				<?php if(isset($article->img)):?>
+				<img src="img/uploads/<?=$article->img;?>" alt="">
+				<?php else :?>
 				<img src="img/banner.jpg" alt="">
+				<?php endif; ?>
 			</div>
 			<div class="newsitem-heading">
 				<h1>
