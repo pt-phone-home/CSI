@@ -3,8 +3,8 @@
   grid-row: 2 / 3;
   background-image: linear-gradient(
     to bottom right,
-    lighten($color: $color-two, $amount: 10%),
-    lighten($color: $color-two, $amount: 30%)
+    darken($color: $text-color-nav, $amount: 30%),
+    darken($color: $text-color-nav, $amount: 50%)
   );
   height: 70rem;
   position: relative;

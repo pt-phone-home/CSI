@@ -33,7 +33,7 @@ body {
       color: $text-color-nav;
       font-size: 1.7rem;
       letter-spacing: 1.2;
-      font-weight: lighter;
+      font-weight: bolder;
       grid-column: 2 / 3;
     }
 
@@ -54,8 +54,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
 
     align-items: center;
-    justify-items: end;
-    padding-right: 5rem;
+    justify-items: center;
+    padding-right: 2rem;
+    margin-left: 5rem;
+
+    font-weight: bolder;
 
     li {
       list-style: none;

@@ -118,7 +118,7 @@ class Article {
             }
 
             if ($this->img == '') {
-                $stmt->bindValue(':img', 'default.jpg', PDO::PARAM_STR);
+                $stmt->bindValue(':img', 'banner.jpg', PDO::PARAM_STR);
             } else {
                 $stmt->bindValue(':img', $this->img, PDO::PARAM_STR);
             }
@@ -200,7 +200,7 @@ class Article {
                 $stmt->bindValue(':published_at', $this->published_at, PDO::PARAM_STR);
             }
             if ($this->img == '') {
-                $stmt->bindValue(':img', 'default.jpg', PDO::PARAM_STR);
+                $stmt->bindValue(':img', 'banner.jpg', PDO::PARAM_STR);
             } else {
                 $stmt->bindValue(':img', $this->img, PDO::PARAM_STR);
             }

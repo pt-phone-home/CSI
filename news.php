@@ -39,7 +39,11 @@ $articles = Article::getAll($conn);
 				<?php if ($articles): ?>
 				<?php foreach ($articles as $article):?>
 				<div class="news-item">
+					<?php if (isset($article['img'])) :?>
+					<img src="img/uploads/<?=$article['img'];?>" alt="">
+					<?php else :?>
 					<img src="img/banner.jpg" alt="">
+					<?php endif ;?>
 					<div class="info">
 						<h1>
 							<?=$article['title'];?>

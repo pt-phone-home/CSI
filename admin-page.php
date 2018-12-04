@@ -2,7 +2,6 @@
 require 'components/init.php';
 ?>
 <?php 
-require 'components/init.php';
 	
 	$db = new Database();
 	$conn = $db->getConn();
@@ -69,7 +68,7 @@ require 'components/init.php';
 									<a href="edit_newsitem.php?id=<?= $article['id'];?>">Edit</a>
 								</td>
 								<td>
-									<a href="delete-article.php?id=<?= $article['id'];?>">Delete</a>
+									<a href="delete_newsitem.php?id=<?= $article['id'];?>">Delete</a>
 								</td>
 
 							</tr>

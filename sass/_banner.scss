@@ -4,7 +4,12 @@
   height: 95vh;
   margin-top: -7rem;
 
-  background: url("../img/banner.jpg");
+  background: linear-gradient(
+      to right bottom,
+      rgba(lighten($text-color-nav, 40%), 0.5),
+      rgba(darken($text-color-nav, 30%), 0.3)
+    ),
+    url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
 
